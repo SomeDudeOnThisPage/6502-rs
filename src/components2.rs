@@ -1,4 +1,4 @@
-use crate::components::memory::RandomAccessMemory;
+use crate::components2::memory::RandomAccessMemory;
 
 trait Addressable {
     fn get_address_space(&self) -> (u16, u16);
@@ -21,7 +21,7 @@ pub struct ScottCPU {
 }
 
 pub mod memory {
-    use crate::components::Addressable;
+    use crate::components2::Addressable;
 
     const MEMORY_SIZE : usize = 0x7fff;
 
